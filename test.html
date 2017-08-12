@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type='text/javascript' stc='https://raw.githubusercontent.com/fajarekapr/my-blog-files/master/ads.js'></script>
+</head>
+<body>
+<style>
+#detect-ads{
+width:20px;
+height:100px;
+background:red;
+display:inline-block;
+}
+</style>
+<p>Click the button to make a BUTTON element.</p>
+<button onclick="myFunction()">Try it</button>
+<br>
+<script>
+function myFunction() {
+    var ads = document.createElement("div");
+    ads.id="detect-ads";
+    ads.style.display="none";
+    document.body.appendChild(ads);
+}
+if(document.getElementById('detect-ads')){
+  alert('Blocking Ads: No');
+} else {
+  alert('Blocking Ads: Yes');
+}
+</script>
+</body>
+</html>
